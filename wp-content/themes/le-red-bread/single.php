@@ -13,7 +13,7 @@ get_header(); ?>
 		<?php while ( have_posts() ) : the_post(); ?>
 
 			<?php get_template_part( 'template-parts/content', 'single' ); ?>
-			
+
 
 			<?php the_post_navigation(); ?>
 
@@ -25,7 +25,9 @@ get_header(); ?>
 			?>
 
 		<?php endwhile; // End of the loop. ?>
+			<button id="close-comments" name="button">Close Comments</button>
 
+		</form>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
