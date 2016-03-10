@@ -21,15 +21,15 @@
 		<a class="skip-link screen-reader-text" href="#content"><?php esc_html( 'Skip to content' ); ?></a>
 
 		<header id="masthead" class="site-header" role="banner">
-			<div class="site-branding container">
+			<div class="site-branding">
 				<div class="site-branding-inner container">
 					<div class="logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo get_template_directory_uri().'/images/lrb-logo.svg'; ?>" alt="Le Red Bread Logo" /></a>
 					</div>
 					<ul class="social">
 						<li><i class="fa fa-facebook"></i></li>
 						<li><i class="fa fa-twitter"></i></li>
-						<li><i class="fa fa-google+"></i>g</li>
-						<li><i class="fa fa-email"></i>e</li>
+						<li><i class="fa fa-google-plus"></i></li>
+						<li><i class="fa fa-envelope"></i></li>
 					</ul>
 					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 					<p class="site-description"><?php bloginfo( 'description' ); ?></p>

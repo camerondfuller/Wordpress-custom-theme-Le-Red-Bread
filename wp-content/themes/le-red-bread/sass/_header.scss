@@ -12,6 +12,7 @@
    background-color: $color__background-body;
    border-top: $solid__border;
    padding: 1.5rem 0;
+   margin: 0 auto;
 
    & .screen-reader-text {
       display: none;
@@ -31,7 +32,7 @@
 .social {
    margin: auto 0;
    padding: 0;
-
+   color: $color__brand-med-grey;
    & li {
       display: inline;
       margin-left: 1.5rem;
@@ -39,7 +40,7 @@
 }
 .main-navigation {
    border-top: $solid__border;
-   border-bottom: $solid__border;
+   box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .3);
    & a, a:visited {
       color: $color__brand-med-grey;
       padding: .75rem 1.5rem;
@@ -64,9 +65,22 @@
       background: transparent;
       margin: 0;
       padding: 0;
+      color:$color__brand-med-grey;
    }
    fieldset {
       border:none;
       margin-top:.4rem;
    }
+}
+.fa-envelope {
+   margin-right: 10px;
+}
+.current-menu-item::after {
+   content: "";
+   display: block;
+   position: absolute;
+   bottom:0;
+   height:3px;
+   width: 100%;
+   background-color: red;
 }

@@ -10,8 +10,11 @@
 		max-width: 100%;
 	}
 }
-
 /* Search widget. */
 .widget_search .search-submit {
 	display: none;
+}
+.widget-area {
+	border-left:1px solid $color__brand-light-grey;
+	width: 33%;
 }
