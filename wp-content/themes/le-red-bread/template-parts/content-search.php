@@ -19,6 +19,7 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-summary">
+		<?php echo CFS()->get('review') ?>
 		<?php the_excerpt(); ?>
 	</div><!-- .entry-summary -->
 </article><!-- #post-## -->

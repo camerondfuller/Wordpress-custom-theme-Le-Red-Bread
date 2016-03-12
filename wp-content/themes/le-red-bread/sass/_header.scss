@@ -40,7 +40,7 @@
 }
 .main-navigation {
    border-top: $solid__border;
-   box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .3);
+   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .3);
    & a, a:visited {
       color: $color__brand-med-grey;
       padding: .75rem 1.5rem;

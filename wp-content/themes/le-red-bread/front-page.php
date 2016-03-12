@@ -27,33 +27,34 @@
          <a href="/products/" class="btn">See Our Products</a>
       </section>
 
-      <div class="news-wrapper container">
-         <h2>Our Latest News</h2>
-         <hr class="decorative">
-      </div>
+      <section class"news-section">
+         <div class="news-wrapper container">
+            <h2>Our Latest News</h2>
+            <hr class="decorative">
+         </div>
+         <div class="front-page-news-bar container">
+            <?php
+            $args = array('post_type'=>'post', 'posts_per_page'=> 4 );
+            $latest_posts = get_posts($args);
+            ?>
+            <?php foreach ($latest_posts as $post):(setup_postdata($post));?>
+               <div class="ind-news-items">
+                  <div class="thumbnail-wrapper">
+                     <?php if ( has_post_thumbnail() ) : ?>
+                        <?php the_post_thumbnail(); ?>
+                     <?php endif; ?>
+                  </div>
+                  <div class="info-wrapper">
+                     <h3> <a href="<?php the_permalink() ?>"> <?php the_title(); ?> </a> </h3>
+                     <div class="entry-meta">
+                        <?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?>
+                     </div><!-- .entry-meta -->
+                  </div>
+               </div>
+            <?php endforeach; wp_reset_postdata(); ?>
+         </div>
 
-      <section class="front-page-news-bar container">
-         <?php
-         $args = array('post_type'=>'post', 'posts_per_page'=> 4 );
-         $latest_posts = get_posts($args);
-         ?>
-         <?php foreach ($latest_posts as $post):(setup_postdata($post));?>
-            <div class="ind-news-items">
-               <div class="thumbnail-wrapper">
-                  <?php if ( has_post_thumbnail() ) : ?>
-                     <?php the_post_thumbnail(); ?>
-                  <?php endif; ?>
-               </div>
-               <div class="info-wrapper">
-                  <h3> <a href="<?php the_permalink() ?>"> <?php the_title(); ?> </a> </h3>
-                  <div class="entry-meta">
-                     <?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?>
-                  </div><!-- .entry-meta -->
-               </div>
-            </div>
-         <?php endforeach; wp_reset_postdata(); ?>
       </section>
-
       <div class="testimonials container">
          <h2>What Others Say About Us</h2>
          <hr class="decorative">

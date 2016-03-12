@@ -133,6 +133,9 @@ a {
 .product-type-cont {
 	display: flex;
 }
+.news-section {
+	border-top: $solid__border;
+}
 .news-wrapper {
 	text-align: center;
 }
@@ -222,43 +225,3 @@ a {
 	}
 	}
 }
-//about
-
-
-// products page
-.products-content-area {
-	width: 1124px;
-	margin: 0 auto;
-}
-.products-grid {
-	display: flex;
-	flex-wrap: wrap;
-	padding: 3rem;
-}
-.product-square {
-	width: 256px;
-	height: 280px;
-	border: $solid__border;
-}
-.product-item-info {
-	padding: 0 .5rem;
-	display: flex;
-	justify-content: space-between;
-}
-
-//contact
-
-
-//blog
-
-
-//sidebar
-.sidebar-cont {
-	padding: 2rem;
-	height:100%;
-}
-
-//404
-
-
-//search

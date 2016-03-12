@@ -1,5 +1,192 @@
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
+//about
+.about-headline {
+   text-align: center;
+}
+.photo-cont {
+   display: flex;
+}
+.about-block {
+   display: flex;
+   justify-content: space-between;
+}
+.about {
+   max-width: 47.5%;
+   & h3 {
+      color: $color__brand-brown;
+      font-size: 1.6rem;
+      margin: 0;
+   }
+   & span {
+      color: $color__brand-light-grey;
+   }
+}
+.team {
+   & img {
+      height: 484px;
+   }
+}
+.bakery {
 
-/* Front page */
+}
+.about-story {
+   & h2 {
+      text-align: center;
+   }
+}
+// products page
+.products-header {
+   text-align: center;
+}
+.product-type-cont {
+   display: flex;
+   justify-content: space-around;
+   width: 75%;
+   & h3 {
+      margin:0;
+   }
+}
+.products-content-area {
+   width: 1124px;
+   margin: 0 auto;
+}
+.products-grid {
+   display: flex;
+   flex-wrap: wrap;
+   padding: 3rem;
+}
+.product-square {
+   width: 256px;
+   height: 280px;
+   border: $solid__border;
+}
+.product-item-info {
+   padding: 0 .5rem;
+   display: flex;
+   justify-content: space-between;
+}
+
+//contact
+.content-area-page {
+   margin-left: auto;
+   padding: 3rem 3.5rem 3rem 0;
+   display: flex;
+   width:60%;
+}
+.form-info {
+   display: flex;
+   justify-content: space-between;
+}
+.form-half {
+   max-width: 50%;
+}
+.form-full {
+
+   & input {
+      width: 100%;
+   }
+}
+.entry-title {
+   text-transform: uppercase;
+
+}
+
+//blog
+.comment-body {
+   display: flex;
+   border-bottom: $dashed__border;
+}
+.comment-author-avatar {
+   margin-right: 1.5rem;
+   & img {
+   border-radius: 50%;
+   }
+}
+.vcard {
+   font-weight: bold;
+}
+.comment-form-author, .comment-form-email {
+   display: inline;
+   & input {
+      width: 41%;
+   }
+   & label {
+      font-weight: bold;
+   }
+}
+.comment-form-comment {
+   & label {
+      font-weight: bold;
+   }
+}
+.comment-form-url {
+   & input {
+      width:90.5%;
+   }
+   & label {
+      font-weight: bold;
+   }
+}
+.comment-form-comment textarea, .comment-form-author input, .comment-form-email input, .comment-form-url input {
+   background-color: $color__background-body-off;
+}
+//sidebar
+.sidebar-cont {
+   padding: 3rem;
+   height:100%;
+   & h2 {
+      text-transform: uppercase;
+      margin:0 auto .75rem;
+   }
+   & i {
+      margin-right: 1rem;
+      line-height: 1.6rem;
+   }
+   & .fa {
+      color:$color__brand-light-grey;
+   }
+   & .address div {
+      padding-left: 2rem;
+   }
+}
+.sidebar-contact-info {
+   & div {
+      margin-bottom: .5rem;
+   }
+}
+.LRB-Hours-class {
+
+   & p {
+      margin: 0 auto .5rem;
+      & span {
+         font-weight: bold;
+         color: $color__brand-red;
+      }
+   }
+}
+.widget_archive {
+   ul {
+      padding: 0;
+      margin: 0;
+      list-style-type: none;
+   }
+}
+//404
+.hidden {
+   display: none;
+}
+
+//search
+.search-header {
+   padding-bottom: 1.5rem;
+   margin-bottom: 1.5rem;
+   border-bottom: $dashed__border;
+   & h1 {
+      margin: 0;
+   }
+}
+.entry-header a {
+   text-decoration: none;
+}
