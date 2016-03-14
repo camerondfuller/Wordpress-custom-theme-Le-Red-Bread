@@ -3,7 +3,7 @@
 
 <div class="front-page-header">
    <div class="front-page-headline">
-      baked to perfection
+      baked to perfection.
    </div>
 </div>
 
@@ -27,7 +27,7 @@
          <a href="/products/" class="btn">See Our Products</a>
       </section>
 
-      <section class"news-section">
+      <section class="news-section">
          <div class="news-wrapper container">
             <h2>Our Latest News</h2>
             <hr class="decorative">
@@ -53,8 +53,8 @@
                </div>
             <?php endforeach; wp_reset_postdata(); ?>
          </div>
-
       </section>
+
       <div class="testimonials container">
          <h2>What Others Say About Us</h2>
          <hr class="decorative">
@@ -72,9 +72,9 @@
                   <?php endif; ?>
                </div>
                <div class="review-info">
-                  <p><?php echo CFS()->get('review') ?></p>
-                  <p><span><?php echo CFS()->get('name') ?></span></p>
-                  <p><?php echo CFS()->get('job') ?> - <?php echo CFS()->get('company') ?></p>
+                  <p class="review"><?php echo CFS()->get('review') ?></p>
+                  <p class="reviewer-name"><span><?php echo CFS()->get('name') ?></span></p>
+                  <p class="reviewer-cred"><?php echo CFS()->get('job') ?> - <?php echo CFS()->get('company') ?></p>
                </div>
             </div>
          <?php endforeach; wp_reset_postdata(); ?>

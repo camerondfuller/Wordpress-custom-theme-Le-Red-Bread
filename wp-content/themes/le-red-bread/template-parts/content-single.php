@@ -21,5 +21,6 @@
 	<?php echo CFS()->get( 'price'); ?>
 	<div class="product-content">
 		<?php the_content(); ?>
+		<?php red_starter_entry_footer(); ?>
 	</div><!-- .entry-content -->
 </article><!-- #post-## -->

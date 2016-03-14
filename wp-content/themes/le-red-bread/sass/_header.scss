@@ -1,9 +1,6 @@
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
-.container {
-   margin: 0 auto;
-}
 .site-header {
    padding-top: 2.25rem;
    background-color: $color__background-body-off;
@@ -24,7 +21,6 @@
 .site-branding-inner {
    display: flex;
    justify-content: space-between;
-   width: 1024px;
 }
 .logo img {
    height:62px;
@@ -55,7 +51,6 @@
 .search-cont {
    display: flex;
    justify-content: space-between;
-   width: 1024px;
    & ul li:last-child {
       border-right:$solid__border;
    }

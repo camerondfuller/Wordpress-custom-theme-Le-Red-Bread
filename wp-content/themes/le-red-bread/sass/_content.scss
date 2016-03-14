@@ -64,9 +64,9 @@ a {
 }
 .blog, .single, .error404, .search, .page:not(.home), .archive:not(.post-type-archive-product) {
 	& .site-content {
-	display: flex;
-	justify-content: space-between;
-}
+		display: flex;
+		justify-content: space-between;
+	}
 }
 .content-area {
 	padding: 3rem 6rem;
@@ -96,6 +96,7 @@ a {
 	max-width: 320px;
 	position: relative;
 	margin:0 auto 3rem;
+	text-align: center;
 	&:after {
 		content: "\f111";
 		font-family: "font-awesome";
@@ -135,13 +136,17 @@ a {
 }
 .news-section {
 	border-top: $solid__border;
+	border-bottom: $solid__border;
+	background-color: $color__background-body-off;
+	padding: 3rem 0;
+	margin-bottom: 3rem;
 }
 .news-wrapper {
 	text-align: center;
 }
 .front-page-news-bar {
 	display: flex;
-	margin-bottom: 3rem;
+	margin-bottom: 1rem;
 }
 .ind-news-items {
 	border: $solid__border;
@@ -168,16 +173,24 @@ a {
 			text-overflow: ellipsis;
 			white-space: nowrap;
 			font-size: 1rem;
+			& a:hover {
+				color:$color__brand-red;
+			}
 		}
 	}
 	& a {
 		color: $color__brand-med-grey;
+		text-decoration: none;
 		&:hover {
 			color: $color__brand-red;
 		}
 		&:visited {
 			color: $color__brand-med-grey;
 		}
+	}
+	& .entry-meta {
+		color: $color__brand-light-grey;
+		font-size: .9rem;
 	}
 }
 .individual-tax-items {
@@ -217,11 +230,14 @@ a {
 	}
 	& .review-info {
 		flex: 1 0 60%;
-		& span {
+		& p {
+			margin:0;
+		}
+		& .review {
+			margin-bottom: 1.5rem;
+		}
+		& .reviewer-name {
 			font-weight: bold;
 		}
-		& p {
-		margin:0;
-	}
 	}
 }
