@@ -6,17 +6,14 @@
 */
 
 ?>
-
 	<div class="product-square">
 		<?php if ( has_post_thumbnail() ) : ?>
 			<a href="http://facebook.com"><?php the_post_thumbnail( 'medium' ); ?></a>
 		<?php endif; ?>
 		<div class="product-item-info">
-			<span><?php the_title( ); ?></span>
-			<span>........</span>
+			<div class="product-title"><?php the_title( ); ?></div>
 			<!-- this displays the price -->
-			<span><?php echo CFS()->get( 'price'); ?></span>
+			<div class="product-price"><?php echo CFS()->get( 'price'); ?></div>
 			<!-- this displays the price -->
 		</div>
-
 	</div>

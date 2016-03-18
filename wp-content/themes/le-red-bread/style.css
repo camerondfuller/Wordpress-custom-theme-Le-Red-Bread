@@ -701,8 +701,8 @@ a {
   width: 60%; }
 
 .front-page-header {
-  background-size: cover;
   background: url(../../images/hero-bread.jpg) center top no-repeat #400c0d;
+  background-size: cover;
   height: 550px;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -925,6 +925,8 @@ a {
     border-left: 1px solid #e1e1e1; }
     .main-navigation a :last-child, .main-navigation a:visited :last-child {
       border-right: 1px solid #e1e1e1; }
+  .main-navigation a:hover {
+    color: #222222; }
 
 .search-cont {
   display: -webkit-flex;
@@ -1144,7 +1146,8 @@ object {
 .product-square {
   width: 256px;
   height: 280px;
-  border: 1px solid #e1e1e1; }
+  border: 1px solid #e1e1e1;
+  overflow: hidden; }
 
 .product-item-info {
   padding: 0 .5rem;
@@ -1153,7 +1156,19 @@ object {
   display: flex;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  overflow: hidden; }
+  .product-item-info .product-title {
+    white-space: nowrap;
+    max-width: 50%; }
+    .product-item-info .product-title:after {
+      content: ".............................";
+      white-space: nowrap;
+      overflow: hidden; }
+  .product-item-info .product-price {
+    background-color: white;
+    padding-right: 1rem;
+    margin-right: -1rem; }
 
 .content-area-page {
   margin-left: auto;

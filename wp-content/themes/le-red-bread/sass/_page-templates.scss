@@ -61,11 +61,27 @@
    width: 256px;
    height: 280px;
    border: $solid__border;
+   overflow: hidden;
 }
 .product-item-info {
    padding: 0 .5rem;
    display: flex;
    justify-content: space-between;
+   overflow: hidden;
+   .product-title {
+      white-space: nowrap;
+      max-width: 50%;
+      &:after {
+      content: ".............................";
+      white-space: nowrap;
+      overflow: hidden;
+      }
+   }
+   .product-price {
+      background-color: white;
+      padding-right: 1rem;
+      margin-right: -1rem;
+   }
 }
 
 //contact
@@ -90,7 +106,6 @@
 }
 .entry-title {
    text-transform: uppercase;
-
 }
 
 //blog

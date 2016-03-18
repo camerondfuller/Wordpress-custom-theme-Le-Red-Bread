@@ -47,6 +47,9 @@
          border-right:$solid__border;
       }
    }
+   & a:hover {
+      color:$color__brand-near-black;
+   }
 }
 .search-cont {
    display: flex;
