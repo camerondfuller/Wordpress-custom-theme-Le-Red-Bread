@@ -64,7 +64,7 @@ a {
 }
 .site-content {
 	padding: 3rem 0;
-	.page &, .blog & {
+	.page &, .blog &, .single &, .archive & {
 		padding: 0;
 	}
 }

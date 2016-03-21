@@ -97,7 +97,7 @@
 }
 .form-full {
    margin-top: 0;
-   padding-bottom: 
+   padding-bottom:
    & input {
       width: 100%;
    }
@@ -234,4 +234,9 @@ fieldset {
 }
 .entry-header a {
    text-decoration: none;
+}
+.price {
+   font-size: 1.5rem;
+   font-family: "Overlock", sans-serif;
+   font-weight: bold;
 }

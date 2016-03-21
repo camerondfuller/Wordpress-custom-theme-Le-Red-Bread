@@ -12,13 +12,13 @@
 	<div class="product-header">
 
 		<!-- This part gets the picture -->
+		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 		<?php if ( has_post_thumbnail() ) : ?>
 			<?php the_post_thumbnail( 'large' ); ?>
 			<!-- This part gets the product's name -->
-			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 		<?php endif; ?>
 	</div>
-	<?php echo CFS()->get( 'price'); ?>
+	<span class="price">Price <?php echo CFS()->get( 'price'); ?></span>
 	<div class="product-content">
 		<?php the_content(); ?>
 		<?php red_starter_entry_footer(); ?>

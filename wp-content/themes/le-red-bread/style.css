@@ -719,7 +719,7 @@ a {
 
 .site-content {
   padding: 3rem 0; }
-  .page .site-content, .blog .site-content {
+  .page .site-content, .blog .site-content, .single .site-content, .archive .site-content {
     padding: 0; }
 
 .blog .site-content, .single .site-content, .error404 .site-content, .search .site-content, .page:not(.home) .site-content, .archive:not(.post-type-archive-product) .site-content {
@@ -1341,3 +1341,8 @@ fieldset {
 
 .entry-header a {
   text-decoration: none; }
+
+.price {
+  font-size: 1.5rem;
+  font-family: "Overlock", sans-serif;
+  font-weight: bold; }
