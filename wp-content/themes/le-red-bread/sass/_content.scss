@@ -64,6 +64,9 @@ a {
 }
 .site-content {
 	padding: 3rem 0;
+	.page &, .blog & {
+		padding: 0;
+	}
 }
 .blog, .single, .error404, .search, .page:not(.home), .archive:not(.post-type-archive-product) {
 	& .site-content {
@@ -75,6 +78,12 @@ a {
 	padding: 3rem 6rem;
 	display: flex;
 	width:60%;
+}
+.content-area-about {
+	padding-top: 3rem;
+}
+.site-main {
+	width: 100%;
 }
 // front page
 .front-page-header {

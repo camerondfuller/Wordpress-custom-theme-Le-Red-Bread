@@ -454,6 +454,20 @@ input[type="submit"] {
     border-color: #aaa #bbb #bbb;
     box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15); }
 
+input[type=submit] {
+  padding: .5rem 1rem;
+  border-radius: 3px;
+  color: white;
+  background-color: #400c0d;
+  text-decoration: none;
+  box-shadow: none;
+  text-shadow: none; }
+  input[type=submit]:hover {
+    text-decoration: underline;
+    background-color: #6b1416; }
+  input[type=submit]:visited {
+    color: white; }
+
 /* Fields */
 input[type="text"],
 input[type="email"],
@@ -463,7 +477,8 @@ input[type="search"],
 textarea {
   color: #666;
   border: 1px solid #ccc;
-  border-radius: 3px; }
+  border-radius: 3px;
+  background-color: #fafafa; }
   input[type="text"]:focus,
   input[type="email"]:focus,
   input[type="url"]:focus,
@@ -477,7 +492,11 @@ input[type="email"],
 input[type="url"],
 input[type="password"],
 input[type="search"] {
-  padding: 3px; }
+  padding: .5rem .3rem; }
+
+input[type="text"],
+input[type="email"] {
+  width: 100%; }
 
 textarea {
   padding-left: 3px;
@@ -485,6 +504,15 @@ textarea {
 
 .required {
   color: #db272a; }
+
+.wpcf7-form {
+  font-weight: bold;
+  color: #808080; }
+  .wpcf7-form p {
+    margin: 0 0 1.5rem; }
+
+.form-info p:first-child {
+  margin-right: 2%; }
 
 /*--------------------------------------------------------------
 # Navigation
@@ -691,6 +719,8 @@ a {
 
 .site-content {
   padding: 3rem 0; }
+  .page .site-content, .blog .site-content {
+    padding: 0; }
 
 .blog .site-content, .single .site-content, .error404 .site-content, .search .site-content, .page:not(.home) .site-content, .archive:not(.post-type-archive-product) .site-content {
   display: -webkit-flex;
@@ -706,6 +736,12 @@ a {
   display: -ms-flexbox;
   display: flex;
   width: 60%; }
+
+.content-area-about {
+  padding-top: 3rem; }
+
+.site-main {
+  width: 100%; }
 
 .front-page-header {
   background: url(../../images/hero-bread.jpg) center top no-repeat #400c0d;
@@ -1179,7 +1215,7 @@ object {
 
 .content-area-page {
   margin-left: auto;
-  padding: 0 3.5rem 0 4.75rem;
+  padding: 3rem 3.5rem 0 4.75rem;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -1193,13 +1229,10 @@ object {
       -ms-flex-pack: justify;
           justify-content: space-between; }
 
-.form-half {
-  max-width: 50%; }
-
 .form-full {
-  margin-top: 0; }
-  .form-full input {
-    width: 100%; }
+  margin-top: 0;
+  padding-bottom: .form-full input;
+    padding-bottom-width: 100%; }
 
 .entry-title {
   text-transform: uppercase; }

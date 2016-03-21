@@ -30,7 +30,22 @@ input[type="submit"] {
 		box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
 	}
 }
-
+input[type=submit] {
+	padding:.5rem 1rem;
+	border-radius: 3px;
+	color: white;
+	background-color: #400c0d;
+	text-decoration: none;
+	box-shadow: none;
+	text-shadow: none;
+	&:hover {
+		text-decoration: underline;
+		background-color: #6b1416;
+	}
+	&:visited {
+		color:white;
+	}
+}
 /* Fields */
 
 input[type="text"],
@@ -42,6 +57,7 @@ textarea {
 	color: #666;
 	border: 1px solid #ccc;
 	border-radius: 3px;
+	background-color: $color__background-body-off;
 
 	&:focus {
 		color: #111;
@@ -53,13 +69,29 @@ input[type="email"],
 input[type="url"],
 input[type="password"],
 input[type="search"] {
-	padding: 3px;
+	padding: .5rem .3rem;
 }
-
+input[type="text"],
+input[type="email"] {
+	width: 100%;
+}
 textarea {
 	padding-left: 3px;
 	width: 100%;
 }
 .required {
 	color:$color__brand-red;
+}
+.wpcf7-form {
+	font-weight: bold;
+	color: $color__brand-med-grey;
+
+	& p {
+		margin: 0 0 1.5rem;
+	}
+}
+.form-info p {
+	&:first-child {
+	margin-right:2%;
+	}
 }

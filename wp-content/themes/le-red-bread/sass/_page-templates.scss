@@ -87,7 +87,7 @@
 //contact
 .content-area-page {
    margin-left: auto;
-   padding: 0 3.5rem 0 4.75rem;
+   padding: 3rem 3.5rem 0 4.75rem;
    display: flex;
    width:60%;
 }
@@ -95,11 +95,9 @@
    display: flex;
    justify-content: space-between;
 }
-.form-half {
-   max-width: 50%;
-}
 .form-full {
    margin-top: 0;
+   padding-bottom: 
    & input {
       width: 100%;
    }
