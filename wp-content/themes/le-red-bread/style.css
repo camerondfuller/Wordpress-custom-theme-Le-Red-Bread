@@ -303,7 +303,8 @@ textarea {
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
   clear: both;
-  font-family: 'Overlock', sans-serif; }
+  font-family: 'Overlock', sans-serif;
+  margin: 0; }
 
 /* Copy */
 p {
@@ -344,6 +345,9 @@ mark, ins {
 
 big {
   font-size: 125%; }
+
+h1 {
+  text-transform: uppercase; }
 
 h2 {
   text-transform: uppercase;
@@ -684,6 +688,9 @@ a {
 .container {
   width: 1024px;
   margin: 0 auto; }
+
+.site-content {
+  padding: 3rem 0; }
 
 .blog .site-content, .single .site-content, .error404 .site-content, .search .site-content, .page:not(.home) .site-content, .archive:not(.post-type-archive-product) .site-content {
   display: -webkit-flex;
@@ -1172,7 +1179,7 @@ object {
 
 .content-area-page {
   margin-left: auto;
-  padding: 3rem 3.5rem 3rem 0;
+  padding: 0 3.5rem 0 4.75rem;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -1263,11 +1270,12 @@ object {
 
 fieldset {
   border: none;
-  margin: 0; }
+  margin: 0;
+  padding: 0 0 .75rem; }
   fieldset label {
     font-weight: bold; }
   fieldset .search-field {
-    padding: .5rem .3px;
+    padding: .5rem .3rem;
     background-color: #fafafa; }
   fieldset .search-submit {
     border: none;

@@ -37,7 +37,6 @@
 		</div>
 	</div>
 
-
 	<div class="site-info">
 		Copyright &copy; 2016 Le Red Bread
 	</div><!-- .site-info -->

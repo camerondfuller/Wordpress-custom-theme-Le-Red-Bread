@@ -62,6 +62,9 @@ a {
 	width: 1024px;
 	margin: 0 auto;
 }
+.site-content {
+	padding: 3rem 0;
+}
 .blog, .single, .error404, .search, .page:not(.home), .archive:not(.post-type-archive-product) {
 	& .site-content {
 		display: flex;

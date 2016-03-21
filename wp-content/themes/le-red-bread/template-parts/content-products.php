@@ -8,7 +8,7 @@
 ?>
 	<div class="product-square">
 		<?php if ( has_post_thumbnail() ) : ?>
-			<a href="http://facebook.com"><?php the_post_thumbnail( 'medium' ); ?></a>
+			<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'medium' ); ?></a>
 		<?php endif; ?>
 		<div class="product-item-info">
 			<div class="product-title"><?php the_title( ); ?></div>

@@ -87,7 +87,7 @@
 //contact
 .content-area-page {
    margin-left: auto;
-   padding: 3rem 3.5rem 3rem 0;
+   padding: 0 3.5rem 0 4.75rem;
    display: flex;
    width:60%;
 }
@@ -195,11 +195,12 @@
 fieldset {
    border:none;
    margin: 0;
+   padding: 0 0 .75rem;
    & label {
       font-weight: bold;
    }
    & .search-field {
-      padding: .5rem .3px;
+      padding: .5rem .3rem;
       background-color: $color__background-body-off;
    }
    & .search-submit {
